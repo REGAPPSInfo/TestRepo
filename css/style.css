@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    font-family: 'poppins', sans-serif;
+    /* background-color:#012C50; */
+}
+#topHeader{
+    background-color :rgba(95, 95, 95, 0.932);  ;
+    border-bottom: 1px solid silver;    
+}
+.navbar-brand img
+{
+    /* position: relative;
+    top:10px;
+    left:15px; */
+    background: url(../img/3-98.svg);
+    width: 75%;
+    height: 75%;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+#topHeader a{
+    color:gray;
+    font-weight:700;
+    font-size:0.89rem;
+}
+body{
+	margin:0;
+	padding:0;
+}
+.carousel-item{
+    max-height:400px;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right:0 ;
+}
+
+.bgdark{
+    background: rgba(95, 95, 95, 0.932);
+}
+
+/* .section-padding {
+    padding: 30px 0;
+} */
+
+.top-footer a{
+    color:white;
+    text-decoration: none;
+    padding:5px;
+}
+.top-footer h3{
+    color:rgb(10, 10, 10);
+    text-decoration: none;
+    /* padding:5px; */
+}
+.top-footer a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.top-footer h3{
+    color:rgb(7, 7, 7);
+}
+
+/* .bottom-footer{
+    background-color:rgba(20, 18, 18, 0.932);
+} */
+.bottom-footer p{
+    padding:20px;
+    color:black;
+}
+.qualities-img{
+    width:200px;
+}
+.submit{
+width:100px;
+height:50px;
+border-radius: 5px;
+}
+#activelink{
+    background-color: white;
+    font-size: 18px;
+}
+.btn-link::after{
+content: '\2212';
+position: absolute;
+right:15px;
+top:11px;
+background-color:#e8eeff;
+width:35px;
+}
+.btn-link.collapsed:after{
+    content: '\002B';
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 60%;
+        height: 60%;
+    }
+    
+    .carousel-item {
+        max-height: 250px;
+    }
+    
+    .qualities-img {
+        width: 150px;
+    }
+    
+    .top-footer a {
+        font-size: 12px;
+        padding: 3px;
+    }
+    
+    .top-footer h6 {
+        font-size: 14px;
+    }
+    
+    /* Improve table responsiveness on mobile */
+    .table-bordered {
+        font-size: 12px;
+    }
+    
+    .table-bordered th,
+    .table-bordered td {
+        padding: 8px 4px;
+    }
+    
+    /* Adjust product cards for mobile */
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+    
+    /* Improve navigation on mobile */
+    .navbar-nav .nav-link {
+        font-size: 16px !important;
+        padding: 10px 0;
+    }
+    
+    /* Adjust footer columns for mobile */
+    .col-lg-2.col-sm-6 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 50%;
+        height: 50%;
+    }
+    
+    .carousel-item {
+        max-height: 200px;
+    }
+    
+    .qualities-img {
+        width: 120px;
+    }
+    
+    /* Stack footer columns on very small screens */
+    .col-sm-6 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Adjust table for very small screens */
+    .table-bordered {
+        font-size: 11px;
+    }
+    
+    .table-bordered th,
+    .table-bordered td {
+        padding: 6px 2px;
+    }
+    
+    /* Improve button sizes on mobile */
+    .submit {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    /* Adjust product descriptions */
+    .col-md-6 p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    /* Improve carousel controls on mobile */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8% !important;
+    }
+}
+
+/* Tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .carousel-item {
+        max-height: 300px;
+    }
+    
+    .qualities-img {
+        width: 180px;
+    }
+    
+    .navbar-brand img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve table responsiveness */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Better touch targets for mobile */
+.nav-link, .dropdown-item {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+/* Improve form elements on mobile */
+input, select, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+}
+
+/* Better spacing for mobile */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Improve readability on mobile */
+body {
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+}
+

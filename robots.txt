@@ -1,0 +1,40 @@
+# Robots.txt for REGAPPS website
+# This file guides search engine crawlers
+
+User-agent: *
+Allow: /
+
+# Allow access to all HTML pages
+Allow: /index.html
+Allow: /aboutus.html
+Allow: /services1.html
+Allow: /services2.html
+Allow: /services3.html
+Allow: /service1feature.html
+Allow: /service2feature.html
+Allow: /service3feature.html
+Allow: /solutions.html
+Allow: /downloads.html
+Allow: /contactus.html
+
+# Allow access to CSS and images for proper rendering
+Allow: /css/
+Allow: /img/
+
+# Allow access to downloads folder
+Allow: /downloads/
+
+# Disallow access to specific folders
+Disallow: /1/
+Disallow: /lic/
+
+# Disallow access to any backup or temporary files
+Disallow: *.bak
+Disallow: *.tmp
+Disallow: *~
+
+# Point to sitemap location
+Sitemap: https://www.regapps.net/sitemap.xml
+
+# Crawl delay (optional - adjust based on server capacity)
+Crawl-delay: 1
